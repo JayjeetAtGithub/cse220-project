@@ -10,7 +10,7 @@ if __name__ == "__main__":
     }
     numbers = [1, 2, 3, 4, 5]
     for num in numbers:
-        with open(f"result_openroad.log.{num}") as f:
+        with open(f"result_openroad/result_openroad.log.{num}") as f:
             lines = f.readlines()
             for line in lines:
                 line = line.strip().split(":")
